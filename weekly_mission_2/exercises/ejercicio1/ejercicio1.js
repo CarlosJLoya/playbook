@@ -1,3 +1,7 @@
+
+
+//GitHub
+console.log("Modelado GitHub")
 const repo = {
     name: "LaunchX",
     author: "CarlosJLoya",
@@ -57,3 +61,59 @@ const PullRequest = {
 console.log("Nombre del repo:" + PullRequest.title)
 console.log("Titulo y Autor::" + PullRequest.getTitleAndAutor())
 console.log(PullRequest.getStatus())
+
+//Twitter
+console.log("Modelado Twitter")
+const user = {
+    user: "Carlos",
+    userName: "CarlosLoya",
+    bio: "....",
+    age: 43,
+    trending_topic: function () {
+        //day: "Marte 19 de Abril",
+        //   noticia: "LaunchX Week 3",
+        return "Marte 19 de Abril " + this.user
+    },
+    hashtag: function () {
+        return "#" + this.userName
+    }
+}
+console.log("Nombre del user:" + user.user)
+console.log("Tendencia:" + user.trending_topic())
+console.log(user.hashtag())
+
+//Facebook
+console.log("Modelado Facebook")
+const facebook = {
+    user: "Carlos",
+    userName: "CarlosLoya",
+    bio: "....",
+    age: 43,
+    estadoCivil: "Casado",
+    estudios: "Universidad",
+    post: function () {
+        //day: "Marte 19 de Abril",
+        //   noticia: "LaunchX Week 3",
+        return "Marte 19 de Abril " + this.user + " Modelados extras Node JS"
+    },
+    biography: function () {
+        return "Biografia " + this.user + " " + this.age + " " + this.estadoCivil + " " + this.estudios
+    }
+}
+console.log("Nombre del user:" + facebook.user)
+console.log("post:" + facebook.post())
+console.log(facebook.biography())
+
+//Uber
+console.log("Modelado Uber")
+const uber = {
+    profile: "Carlos",
+    numViajes: 5,
+    km: 13,
+    travel: function () {
+        return "Ultimo viaje " + this.km + " Inicio Colonia Colinas del Sol a las Palmas"
+    },
+}
+console.log("Nombre del perfil: " + uber.profile)
+console.log("viajes: " + uber.viajes)
+console.log(uber.travel()) 
