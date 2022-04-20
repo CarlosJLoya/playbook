@@ -83,13 +83,54 @@ console.log("Tendencia:" + user.trending_topic())
 console.log(user.hashtag())
 
 //Facebook
-console.log("Modelado Facebook")
-const facebook = {
-    user: "Carlos",
-    userName: "CarlosLoya",
-    bio: "....",
-    age: 43,
-    estadoCivil: "Casado",
+/** 
+*Perfil del usuario
+*   -Nombre
+*   -Usuario
+*   -Seguidores
+*   -numero de posts
+*   -Biografia
+*    -password
+*Fotos del usuario
+*    -Imagen
+*    -likes
+*    -fecha
+*    -descripcion
+*    -ubicacion
+*   -usuario
+*Mensajes
+*    -descripcion
+*   -fecha
+*      -usuario
+*Videos del usuario
+*    -video
+*    -likes
+*    -fecha
+*    -descripcion
+*    -ubicacion
+*   -usuario
+*Reels del usuario
+*    -video
+*    -likes
+*    -fecha
+*    -descripcion
+*    -ubicacion
+*   -usuario
+*Fotos etiquetadas
+*    -Imagen
+*    -likes
+*    -fecha
+*    -descripcion
+*    -ubicacion
+*   -usuario
+*/
+console.log("Modelado Instagram")
+const ig_user = {
+    name: "name",
+    userName: "user name",
+    followers: 100,
+    following: 43,
+    totalPost: 15,
     estudios: "Universidad",
     post: function () {
         //day: "Marte 19 de Abril",
@@ -100,9 +141,9 @@ const facebook = {
         return "Biografia " + this.user + " " + this.age + " " + this.estadoCivil + " " + this.estudios
     }
 }
-console.log("Nombre del user:" + facebook.user)
-console.log("post:" + facebook.post())
-console.log(facebook.biography())
+console.log("Nombre del user:" + ig_user.user)
+console.log("post:" + ig_user.post())
+console.log(ig_user.biography())
 
 //Uber
 console.log("Modelado Uber")
