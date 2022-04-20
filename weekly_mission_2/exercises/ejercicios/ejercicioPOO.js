@@ -17,8 +17,22 @@ class Ajolonauta {
         this.age = age
         this.color = color
     }
+    sayHello() {
+        return `Hey! Hello ${this.name} is saying hello!`
+    }
 }
+
+
+class Pokemon {
+    constructor(name) {
+        this.name = name
+    }
+}
+const pikachu = new Pokemon("Pikachu")
+console.log(pikachu)
+
 //console.log(Ajolonauta)
+
 const woopa_obj_js = {
 
 }
@@ -26,7 +40,7 @@ console.log(woopa_obj_js)
 
 const woopa = new Ajolonauta("Woopa", "Node JS", 18, "pink")
 console.log(woopa)
-
+console.log(woopa.sayHello())
 const wooper = new Ajolonauta("Wooper", "java", 10, "Blue")
 console.log(wooper)
 
