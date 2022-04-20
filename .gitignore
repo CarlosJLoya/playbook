@@ -1,0 +1,9 @@
+bin/
+*.sln
+*.suo
+*.dll
+img/
+formatos/Files/
+reportesRH/
+*.xlsx
+weekly_mission_3/my_launch_app/node_modules/
